@@ -8,4 +8,8 @@ There is an LED emitter and receiver (38KHz) being used as a proximity detector.
 
 When the clock detects a hand being waved above it, the time will display for 2 seconds then go off.
 
+# WaveClock Version 2
+
+Version 2 does away with the RTC chip and replaces the Arduino with an ESP8266. The time is obtained via NTP servers (Using the Squix TimeClient library) so it is always second accurate. Also requires the ESP8266 specific IRRemote library.
+
 
